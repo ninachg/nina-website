@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    alert("working")
     $("#backmobiledriveway").click(function(){
         console.log("clickback")
         window.location.replace("google.com")
