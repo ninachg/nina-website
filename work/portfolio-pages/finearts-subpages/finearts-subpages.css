@@ -1,0 +1,261 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   
+    scroll-behavior: smooth;  
+}
+
+.row{
+    display: flex;
+    width:auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:2%;
+    border: 1px solid black;
+    z-index: 100;
+  }
+
+.flex-container {
+    display: flex;
+    width: auto;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:2%;
+    border: 1px solid black;  
+  }
+
+  
+.flex-bottom {
+    width: auto;
+   /* height:auto;*/
+   border: 1px solid black;
+    margin:2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* max-width:600px;*/
+}
+
+.flex-bottom img{
+    width: auto;
+    height: 700px;
+    max-height: 1000px;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+
+.flex-top {
+    border: 1px solid black;
+    font-size: 100px;
+    margin-bottom: 1%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    color:rgb(30, 101, 117);
+}
+
+.flex-top h1{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+img{
+    width:100%;
+    max-width: 100%;
+}
+
+.back{
+   margin-right:1000px;
+   position:absolute;
+}
+
+.back a{ 
+    text-decoration:none;
+    font-family: 'Rubik', sans-serif;
+    color:rgb(30, 101, 117);
+    font-size: 60px;   
+}
+
+.back a:hover{
+    color: rgb(255, 106, 78, .8);
+    }
+
+.next{
+    margin-left:1000px;
+    display: flex;
+    position:absolute;
+}
+
+.next a{
+    justify-content: center;
+    align-items: center;
+    text-decoration:none;
+    font-family: 'Rubik', sans-serif;
+    color:rgb(30, 101, 117);
+    font-size: 60px;
+   /* border: 4px solid black;*/
+}
+
+.next a:hover{
+color: rgb(255, 106, 78, .8);
+}
+
+.x a{
+    text-decoration:none;
+    font-family: 'Rubik', sans-serif;
+    color:rgb(30, 101, 117);
+}
+.x a:hover{
+    color: rgb(255, 106, 78, .8);
+}
+
+.x{
+    margin-left: 96%;
+    padding-top:40px;
+    font-size: 50px; 
+}
+
+  /* contacts*/
+  .contact-icon-container{
+    border-top:rgb(30, 101, 117) solid 1px;  
+    text-align: center;
+    justify-content: center;
+    margin-top:40px;
+}
+
+.contact-icon{
+    width:30px;
+    margin-left:40px;
+    margin-right:40px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+    /* end contacts*/
+
+
+@media screen and (max-width: 768px) {
+
+    .slideshowmobile{
+        position: fixed;
+        z-index: 5;
+        min-width: 100%;
+        min-height: 100%;
+        background-color: tomato;
+        opacity: 20%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .backmobile{ 
+        justify-content: center;
+        border: black 2px solid;
+        width: 50%;
+        min-height: 100%;
+        background-color: turquoise;
+        opacity: 60%;
+    }
+
+    .backmobile a{
+         font-size: 50px;
+         border: black 2px solid;
+         justify-content: center;
+         align-items: center;
+         text-align:center;
+    }
+
+    .nextmobile{
+        justify-content: center;
+        border: black 2px solid;
+        width: 50%;
+        min-height: 100%;
+        background-color: rgb(75, 224, 64);
+        opacity: 60%;
+    
+    }
+
+    .nextmobile a{
+        font-size: 50px;
+    }
+
+    /*.column {
+        flex: 50%;
+        max-width: 50%;
+      }*/
+    
+    .flex-container {
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: auto;
+         margin: auto;
+   
+      }
+    
+
+   /*html, body {
+        max-width: 100%;
+        overflow-x: hidden;*/
+
+    .x{
+        margin-left: 90%;
+        padding-top:40px;
+        font-size: 40px; 
+    }
+
+    
+    .flex-bottom {
+        width: auto;
+        height:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       /* max-width:600px;*/
+    }
+
+    .flex-bottom img{
+        height: auto;
+        width: 400px;
+        max-width:400px;
+        object-fit: contain;
+}
+
+
+
+
+    .flex-bottom {
+        height:auto;
+        width: auto;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .flex-bottom img{
+        height: auto;
+        width: 300px;
+        max-width:300px;
+        object-fit: contain;
+}
+
+.slideshow{
+    position: fixed;
+    z-index: 5;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: tomato;
+    opacity: 20%;
+}
+
+   
+}
