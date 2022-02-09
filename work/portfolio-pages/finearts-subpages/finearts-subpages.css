@@ -119,7 +119,7 @@ color: rgb(255, 106, 78, .8);
 .x{
     margin-left: 96%;
     padding-top:20px;
-    font-size: 30px; 
+    font-size: 30px;
     z-index: 100;
 }
 
@@ -151,6 +151,7 @@ color: rgb(255, 106, 78, .8);
     .back{
         display:none;
     }
+
     .slideshowmobile{
         position: fixed;
         z-index: 5;
@@ -225,8 +226,9 @@ color: rgb(255, 106, 78, .8);
 
     .flex-bottom img{
         height: auto;
-        width: 400px;
-        max-width:400px;
+        width: 100%;
+        max-width:100%;
+        max-height:800px;
         object-fit: contain;
 }
 
@@ -238,6 +240,13 @@ color: rgb(255, 106, 78, .8);
 
     h1{
         font-size: 20px;
+    }
+
+    .x{
+        margin-left: 92.5%;
+        padding-top:15px;
+        font-size: 25px; 
+        z-index: 1;
     }
 }
 
@@ -306,7 +315,5 @@ color: rgb(255, 106, 78, .8);
     z-index: 1;
 }
 
-.x a{
-    z-index: 1;
-}
+
 }
