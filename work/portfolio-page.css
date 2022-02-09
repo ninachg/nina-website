@@ -204,6 +204,7 @@ img.icon-sculpture:hover {
     opacity: 100%; 
 }}
 
+
 @media  (max-width: 1048px) {
     label.logo{
         font-size:32px;
@@ -219,30 +220,33 @@ img.icon-sculpture:hover {
     }
 
   .grid{
-     grid-gap: none;
-     justify-content: center;
+    grid-gap:70px;
+    justify-content: center;
     align-items: center;
-    margin:none;
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: 220px 220px 220px;
+    display:grid;
   }
 
     .grid > div{
-     width: 250px;
-     height: 250px;
-     padding:none;
-     margin:none;
+        width:220px;
+        height:220px;
+        border-radius: 50%;
+        margin:15px;
+        font-size: 20px;
     }
 
     img.icon-sculpture{
-        max-height: 175px;
-        max-width: 175px;
+        max-height: 150px;
+        max-width: 150px;
         margin-bottom: 15px;
         padding:15px;
         align-items: center;
     }
 
     img.icon{
-        max-height: 175px;
-        max-width: 175px;
+        max-height: 150px;
+        max-width: 150px;
         margin-bottom: 15px;
         padding:15px;
         align-items: center;
@@ -357,6 +361,12 @@ img.icon-sculpture:hover {
    nav #icon{
     font-size: 30px;
     margin-right: 25px;
+}
+
+.grid{
+    animation-name: fade-bounce;
+    animation-duration: 2s;
+    
 }
 
 .grid > div{
