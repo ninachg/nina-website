@@ -141,13 +141,16 @@ color: rgb(255, 106, 78, .8);
 
 
 @media screen and (max-width: 768px) {
+    .next{
+        display:none;
+    }
 
     .slideshowmobile{
         position: fixed;
         z-index: 5;
         min-width: 100%;
         min-height: 100%;
-        background-color: tomato;
+       /* background-color: tomato;*/
         opacity: 20%;
         display: flex;
         flex-direction: row;
@@ -158,7 +161,7 @@ color: rgb(255, 106, 78, .8);
      /*   border: black 2px solid; */
         width: 50%;
         min-height: 100%;
-        background-color: turquoise;
+        /*background-color: turquoise;*/
         opacity: 60%;
     }
 
@@ -175,7 +178,7 @@ color: rgb(255, 106, 78, .8);
        /* border: black 2px solid; */
         width: 50%;
         min-height: 100%;
-        background-color: rgb(75, 224, 64);
+        /*background-color: rgb(75, 224, 64);*/
         opacity: 60%;
     
     }
@@ -196,7 +199,6 @@ color: rgb(255, 106, 78, .8);
         display: flex;
         width: auto;
          margin: auto;
-    
    
       }
     
@@ -223,8 +225,6 @@ color: rgb(255, 106, 78, .8);
 }
 
 
-
-
     .flex-bottom {
         height:auto;
         width: auto;
@@ -235,11 +235,52 @@ color: rgb(255, 106, 78, .8);
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
+    .slideshowmobile{
+        position: fixed;
+        z-index: 5;
+        min-width: 100%;
+        min-height: 100%;
+      /*  background-color: tomato;*/
+        opacity: 20%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .backmobile{ 
+        justify-content: center;
+     /*   border: black 2px solid; */
+        width: 50%;
+        min-height: 100%;
+       /* background-color: turquoise;*/
+        opacity: 60%;
+    }
+
+    .backmobile a{
+         font-size: 50px;
+        /* border: black 2px solid; */
+         justify-content: center;
+         align-items: center;
+         text-align:center;
+    }
+
+    .nextmobile{
+        justify-content: center;
+       /* border: black 2px solid; */
+        width: 50%;
+        min-height: 100%;
+        /*background-color: rgb(75, 224, 64);*/
+        opacity: 60%;
+    
+    }
+
+    .nextmobile a{
+        font-size: 50px;
+    }
     .flex-bottom img{
         height: auto;
-        width: 300px;
-        max-width:300px;
+        width: 100%;
+        max-width:100%;
         object-fit: contain;
 }
 
@@ -248,9 +289,18 @@ color: rgb(255, 106, 78, .8);
     z-index: 5;
     min-width: 100%;
     min-height: 100%;
-    background-color: tomato;
+    /*background-color: tomato;*/
     opacity: 20%;
 }
 
-   
+.x{
+    margin-left: 92%;
+    padding-top:15px;
+    font-size: 25px; 
+    z-index: 10;
+}
+
+.x a{
+    z-index: 10;
+}
 }
