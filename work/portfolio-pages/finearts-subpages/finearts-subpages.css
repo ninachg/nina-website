@@ -109,15 +109,18 @@ color: rgb(255, 106, 78, .8);
     text-decoration:none;
     font-family: 'Rubik', sans-serif;
     color:rgb(30, 101, 117);
+    z-index: 100;
 }
 .x a:hover{
     color: rgb(255, 106, 78, .8);
+    z-index: 100;
 }
 
 .x{
     margin-left: 96%;
     padding-top:20px;
     font-size: 30px; 
+    z-index: 100;
 }
 
   /* contacts*/
@@ -145,6 +148,9 @@ color: rgb(255, 106, 78, .8);
         display:none;
     }
 
+    .back{
+        display:none;
+    }
     .slideshowmobile{
         position: fixed;
         z-index: 5;
@@ -297,10 +303,10 @@ color: rgb(255, 106, 78, .8);
     margin-left: 92%;
     padding-top:15px;
     font-size: 25px; 
-    z-index: 10;
+    z-index: 1;
 }
 
 .x a{
-    z-index: 10;
+    z-index: 1;
 }
 }
