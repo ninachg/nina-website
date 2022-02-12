@@ -126,6 +126,8 @@ li a.active,li a:hover{
 .column img:hover {
   border: 8px solid rgb(255, 172, 157);
   padding:none;
+  transition: border .3s;
+  
 }
 
 
@@ -227,7 +229,7 @@ li a.active,li a:hover{
   }
 
   h1{
-    font-size:40px;
+    font-size:30px;
   }
 }
 

@@ -327,6 +327,8 @@ img.icon-sculpture:hover {
 
     .grid{
         margin-top:40px;
+        justify-content: center;
+        align-items: center;
     }
 
     .grid > div{
@@ -366,6 +368,8 @@ img.icon-sculpture:hover {
 .grid{
     animation-name: fade-bounce;
     animation-duration: 2s;
+    justify-content: center;
+    align-items: center;
     
 }
 
