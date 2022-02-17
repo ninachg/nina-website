@@ -162,6 +162,15 @@ img.icon-sculpture:hover {
 }
     /* end contacts*/
 
+    @keyframes none {
+        0%{
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
   @keyframes growDown {
     0% {
       transform: scaleY(0)
@@ -203,7 +212,14 @@ img.icon-sculpture:hover {
    100%    { 
     opacity: 100%; 
 }}
-
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 
 @media  (max-width: 1048px) {
     label.logo{
@@ -296,6 +312,8 @@ img.icon-sculpture:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        animation-name: fade;
+
     }
 
     .grid > div{
@@ -305,19 +323,7 @@ img.icon-sculpture:hover {
         height: 300px;
      
     }
-    .grid > div {
-    padding: 15px;
-    border-radius: 50%;
-    display:grid;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin:15px;
-    font-size: 20px;
-    color: rgb(30, 101, 117);
-    background-color:rgb(195, 226, 226);
 
-}
 
     img.icon-sculpture{
         max-height: 180px;
@@ -325,6 +331,8 @@ img.icon-sculpture:hover {
         margin-bottom: 15px;
         padding:15px;
         align-items: center;
+        animation-name: spin;
+        animation-duration: 1.5s;
     }
 
     img.icon{
@@ -333,7 +341,11 @@ img.icon-sculpture:hover {
         margin-bottom: 15px;
         padding:15px;
         align-items: center;
+        animation-name: spin;
+        animation-duration: 1.5s;
     }
+
+       
 }
 
 
