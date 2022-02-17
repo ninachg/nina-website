@@ -382,11 +382,6 @@ img.icon-sculpture:hover {
     margin-right: 25px;
 }
 
-.grid{
-    animation-play-state: paused;
-    
-}
-
 .grid > div{
     width: 200px;
     height: 200px;
